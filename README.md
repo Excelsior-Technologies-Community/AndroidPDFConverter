@@ -42,7 +42,27 @@
 
 ## Installation
 
-### Step 1: Add Permissions to AndroidManifest.xml
+### **Step 1: Add JitPack Repository**
+
+```gradle
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+### **Step 2: Add Library Dependency**
+
+```gradle
+dependencies {
+	        implementation("com.github.Excelsior-Technologies-Community:AndroidPDFConverter:1.0.0")
+}
+```
+
+### **Step 3: Add Permissions to AndroidManifest.xml**
 
 ```xml
 <uses-permission
@@ -54,9 +74,7 @@
     tools:ignore="ScopedStorage" />
 ```
 
-### Step 2: Add FileProvider Configuration
-
-Add to `AndroidManifest.xml` inside `<application>`:
+### **Step 4: Add FileProvider**
 
 ```xml
 <provider
@@ -70,9 +88,7 @@ Add to `AndroidManifest.xml` inside `<application>`:
 </provider>
 ```
 
-### Step 3: Create file_paths.xml
-
-Create `res/xml/file_paths.xml`:
+### **Step 5: Create file_paths.xml**
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
