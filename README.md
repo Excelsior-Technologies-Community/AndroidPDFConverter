@@ -424,32 +424,6 @@ All errors are returned through the `onError()` callback.
 
 ---
 
-## Sample Project Structure
-
-```
-app/
-├── src/main/
-│   ├── java/com/ext/
-│   │   ├── pdf_converter/
-│   │   │   ├── PdfConverter.kt
-│   │   │   ├── WordToPdfConverter.kt
-│   │   │   ├── ExcelToPdfConverter.kt
-│   │   │   ├── ImageToPdfConverter.kt
-│   │   │   ├── TextToPdfConverter.kt
-│   │   │   └── ConversionResult.kt
-│   │   └── pdfconverter/
-│   │       └── MainActivity.kt
-│   ├── res/
-│   │   ├── layout/
-│   │   │   └── activity_main.xml
-│   │   └── xml/
-│   │       └── file_paths.xml
-│   └── AndroidManifest.xml
-└── build.gradle
-```
-
----
-
 ## Performance Tips
 
 1. **Large Files**: The library processes files asynchronously but large Excel files may take time
